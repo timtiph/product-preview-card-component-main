@@ -1,0 +1,150 @@
+*, ::after, ::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* FONT */
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+.fraunces {
+    font-family: 'Fraunces', serif;
+}
+
+body p {
+    font-size: 14px;
+}
+
+/* ## Colors */
+
+/* ### Primary */
+
+.bg-dark-cyan {
+    background-color: hsl(158, 36%, 37%);
+}
+.ft-dark-cyan {
+    color: hsl(158, 36%, 37%);
+}
+.bg-cream {
+    background-color: hsl(30, 38%, 92%);
+}
+.ft-cream {
+    color: hsl(30, 38%, 92%);
+}
+
+/* ### Neutral */
+.bg-very-dark-blue {
+    background-color: hsl(212, 21%, 14%);
+}
+.ft-very-dark-blue {
+    color: hsl(212, 21%, 14%);
+}
+.bg-darl-grayish-blue {
+    background-color: hsl(228, 12%, 48%);
+}
+.ft-darl-grayish-blue {
+    color: hsl(228, 12%, 48%);
+}
+.bg-white {
+    background-color: hsl(0, 0%, 100%);
+}
+.ft-white {
+    color: hsl(0, 0%, 100%);
+}
+
+/* BODY */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1rem;
+    border-radius: 10px;
+    color:hsl(228, 12%, 48%);
+    overflow: hidden;
+}
+.container .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container .image img{
+    width: 343px;
+    height: 100%;
+}
+.card-body {
+    padding: 25px;
+}
+.sorte {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 10px 0;
+}
+.card-title {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.card-text {
+    margin: 1rem 0;
+}
+.price {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 1rem 0;
+}
+.reduce-price {
+    font-size: 30px;
+    font-weight: 700;
+}
+.old-price {
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+button {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border: 1px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition:
+    background-color 1s,
+    transform 1s;
+}
+button:hover{
+    background-color: #1A4031;
+    
+}
+button img {
+    margin: 5px;
+}
+button p {
+    font-weight: 600;
+    margin: 5px;
+
+}
+
+/* FOOTER */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
